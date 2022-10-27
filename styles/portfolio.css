@@ -10,6 +10,7 @@ font-family: 'Nunito', sans-serif;*/
 
 body {
   font-family: var(--main-font-family);
+ 
 }
 h1,
 h2,
@@ -23,6 +24,7 @@ h1 {
   font-size: 66px;
   font-weight: bold;
   line-height: 1.5;
+  text-align: center;
 }
 h2 {
   font-size: 55px;
@@ -48,22 +50,32 @@ p {
   color: var(--second-main-color);
 }
 
-.about-page{
+.content-container{
   padding: 160px 20px;  
 
 }
-.about-page h1 {
+.content h1 {
   font-size: 40px;
   line-height: 80px;
 }
-.about-page h2 {
+.content h2 {
   font-size: 18px;
   font: optional;
   font-weight: bold;
 }
+.content h3 {
+    font-size: 20px;
+    line-height: 1.5;
+    
 
-.about-section {
+}
+
+.content{
     margin: 30px;
+}
+.content p{
+    font-size: 14px;
+   
 }
 .btn-branding {
   background-color: var(--branding-color);
@@ -100,6 +112,10 @@ p {
     font-size: 35px;
   }
   about-page{
+      text-align: center;
+      padding: 0;
+  }
+  .content{
       text-align: center;
       padding: 0;
   }
