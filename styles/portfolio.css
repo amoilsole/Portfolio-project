@@ -2,7 +2,7 @@
 font-family: 'Nunito', sans-serif;*/
 
 :root {
-  --branding-color: #5e89ef;
+  --branding-color: /*#5e89ef;*/#49CCCE;
   --main-color: #142d4c;
   --second-main-color: #385170;
   --main-font-family: "Nunito", sans-serif;
@@ -10,7 +10,6 @@ font-family: 'Nunito', sans-serif;*/
 
 body {
   font-family: var(--main-font-family);
- 
 }
 h1,
 h2,
@@ -50,9 +49,8 @@ p {
   color: var(--second-main-color);
 }
 
-.content-container{
-  padding: 160px 20px;  
-
+.content-container {
+  padding: 160px 20px;
 }
 .content h1 {
   font-size: 40px;
@@ -64,19 +62,15 @@ p {
   font-weight: bold;
 }
 .content h3 {
-    font-size: 20px;
-    line-height: 1.5;
-    
-
+  font-size: 20px;
+  line-height: 1.5;
 }
 
-.content{
-    margin: 30px;
-   
+.content {
+  margin: 30px;
 }
-.content p{
-    font-size: 14px;
-   
+.content p {
+  font-size: 14px;
 }
 .btn-branding {
   background-color: var(--branding-color);
@@ -97,6 +91,32 @@ p {
 .project-description {
   padding: 100px 60px;
 }
+.logo {
+  max-height: 40px;
+}
+nav {
+  padding: 20px 0;
+}
+nav a {
+  text-decoration: none;
+  color: var(--main-color);
+  transition: all 80ms ease-in-out;
+}
+nav li.active a,
+nav a:hover {
+  color: var(--branding-color);
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 40px;
+  margin-left: 16px;
+}
 @media (max-width: 900px) {
   .project-description {
     padding: 0;
@@ -112,12 +132,12 @@ p {
   h2 {
     font-size: 35px;
   }
-  about-page{
-      text-align: center;
-      padding: 0;
+  about-page {
+    text-align: center;
+    padding: 0;
   }
-  .content{
-      text-align: center;
-      padding: 0;
+  .content {
+    text-align: center;
+    padding: 0;
   }
 }
