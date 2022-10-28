@@ -2,7 +2,7 @@
 font-family: 'Nunito', sans-serif;*/
 
 :root {
-  --branding-color: /*#5e89ef;*/#49CCCE;
+  --branding-color: /*#5e89ef;*/ #49ccce;
   --main-color: #142d4c;
   --second-main-color: #385170;
   --main-font-family: "Nunito", sans-serif;
@@ -27,6 +27,9 @@ h1 {
 }
 h2 {
   font-size: 55px;
+}
+h4{
+    font-size: 35px;
 }
 p {
   font-weight: normal;
@@ -117,6 +120,40 @@ nav li {
   line-height: 40px;
   margin-left: 16px;
 }
+footer {
+  margin: 60px 0;
+  
+}
+
+footer .contact-box{
+    background-color:#f2f7ff;
+    padding: 30px 120px;
+    border-radius: 10px;
+}
+footer .contact-box p{
+    margin: 0;
+}
+footer .email-link {
+  text-decoration: none;
+  color: var(--main-color);
+  font-size: 20px;
+}
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+footer .social-links a {
+  margin: 0 25px;
+  color: var(--branding-color);
+  background-color: #f2f7ff;
+  padding: 10px 16px;
+  font-size: 18px;
+  border-radius: 50%;
+  transition: all 100ms ease-in-out;
+}
+footer .social-links a:hover{
+    color:white;
+    background-color: var(--branding-color);
+}
 @media (max-width: 900px) {
   .project-description {
     padding: 0;
@@ -132,6 +169,9 @@ nav li {
   h2 {
     font-size: 35px;
   }
+  h4{
+      font-size: 20px;
+  }
   about-page {
     text-align: center;
     padding: 0;
@@ -140,4 +180,9 @@ nav li {
     text-align: center;
     padding: 0;
   }
+  footer .contact-box{
+    
+    padding: 15px;
+  
+}
 }
